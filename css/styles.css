@@ -39,6 +39,11 @@ nav {
 	flex-wrap: wrap;
 }
 
+#mainNav li {
+	width: 100%;
+	text-align: center;
+}
+
 #mainNav li a {
 	font-size: 1.5em;
 	color: #fff;
@@ -65,6 +70,7 @@ nav {
 	background: #FFD200;
 	border-radius: 10px;
 	color: #404040;
+	margin: 5%;
 }
 
 #welcome > img {
