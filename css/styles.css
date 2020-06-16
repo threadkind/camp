@@ -1,0 +1,72 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.hide {
+	display: none;
+}
+
+html {
+	background: rgb(52,232,158);
+background: linear-gradient(125deg, rgba(52,232,158,1) 0%, rgba(35,152,104,1) 50%, rgba(52,232,158,1) 100%);
+	min-width: 100vw;
+	min-height: 100vh;
+}
+
+nav {
+	width: 100%;
+	background: #FFD200;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	box-shadow: 2px 2px 5px grey;
+	padding: 2%;
+}
+
+#hamburger {
+	width: 95%;
+	text-align: right;
+	font-size: 2em;
+	padding: 2%;
+	color: #fff;
+}
+
+#mainNav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mainNav li a {
+	font-size: 1.5em;
+	color: #fff;
+}
+
+#welcome {
+	margin: 2%;
+	text-align: center;
+	font-size: 1.5em;
+	color: rgb(255, 254, 214);
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#welcome h1 {
+	margin: 2%;
+}
+
+#welcome button {
+	width: 75%;
+	padding: 2%;
+	font-size: 1.15em;
+	background: #FFD200;
+	border-radius: 10px;
+	color: #404040;
+}
+
+#welcome > img {
+	width: 80%;
+}
