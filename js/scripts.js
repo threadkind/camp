@@ -10,7 +10,7 @@ let page = {
 let menu = {
 	1 : {
 		name : 'Home',
-		link : '#'
+		link : 'index.html'
 	},
 	2 : {
 		name : 'Start Here!',
@@ -22,7 +22,7 @@ let menu = {
 	},
 	4 : {
 		name : 'Bea TV Website',
-		link : '#'
+		link : 'https://bea-tv.com/'
 	},
 	5 : {
 		name : 'Social',

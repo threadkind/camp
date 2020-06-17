@@ -81,6 +81,10 @@ nav {
 	width: 80%;
 }
 
+#badgeContain {
+	padding: 2%;
+}
+
 #badges {
 	display: flex;
 	flex-wrap: wrap;
