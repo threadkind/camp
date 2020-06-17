@@ -31,14 +31,9 @@ let menu = {
 }
 
 // ADD ITEMS TO MENU
-
-
-console.log(Object.keys(menu))
 let nav = ''
 Object.keys(menu).forEach((key) => {
-	nav += `<li class="hide"><a href="${menu[key].link}">${menu[key].name}</a></li>`
-
-
+	nav += `<li class="menuHide"><a href="${menu[key].link}">${menu[key].name}</a></li>`
 })
 
 page.mainNav.innerHTML = nav;
@@ -46,7 +41,7 @@ page.mainNav.innerHTML = nav;
 // TOGGLE HAMBURGER BUTTOM + MENU
 page.hamburger.addEventListener('click', () => {
 	document.querySelectorAll('#mainNav li').forEach((li) => {
-		li.classList.toggle('hide')
+		li.classList.toggle('menuHide')
 	})
 
 	if(page.hbx.classList.contains('hide')){
