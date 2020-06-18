@@ -6,17 +6,19 @@ let p = {
 badges = {
 	beatv : {
 		name : 'Bea TV',
-		description : 'Freebie badge for joining the Bea TV Art Scouts!',
-		paper : 'images/badges/beatv-paper-merit-badge.png',
-		fabric : 'images/badges/beatv-fabric-merit-badge.jpeg',
-		certificate : '',
+		description : 'Check out Bea TV online to earn this badge!',
+		paper : 'images/badges/paper/beatv-paper-merit-badge.png',
+		fabric : 'images/badges/fabric/beatv-fabric-merit-badge.jpeg',
+		certificate : 'https://photos.app.goo.gl/BVo8b7h2yUEtdbF97',
 		tasks : {
 			task1 : {
 				id : 'youTube',
 				title : `Subscribe to BeaTV on YouTube`,
-				description : `Subscrible to BeaTV on YouTube`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Subscrible to BeaTV on YouTube`
+				description : ``,
+				link : ``,
+				instructions : `<p>Check out BeaTV on YouTube. This is where you will find all her Bea TV Summer Camp videos. If you enjoy her Summer Camp content, then take a look around. Bea has over 100 videos for you to enjoy!</p>
+					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/cTqqiIGwum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>`
 				},
 			task2 : {
 				id : 'facebook',
@@ -51,9 +53,9 @@ badges = {
 	mexico : {
 		name : 'Mexico',
 		description : 'Learn about Mexico and make some fun, colorful Mexican crafts',
-		paper : 'images/badges/mexico-paper-merit-badge.png',
-		fabric : 'images/badges/mexico-fabric-merit-badge.jpeg',
-		certificate : '',
+		paper : 'images/badges/paper/mexico-paper-merit-badge.png',
+		fabric : 'images/badges/fabric/mexico-fabric-merit-badge.jpeg',
+		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -95,9 +97,9 @@ badges = {
 	storyteller : {
 		name : 'Storyteller',
 		description : 'If you love making stories, then this is a badge you will really enjoy earning!',
-		paper : 'images/badges/storyteller-paper-merit-badge.png',
+		paper : 'images/badges/paper/storyteller-paper-merit-badge.png',
 		fabric : '',
-		certificate : '',
+		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -137,8 +139,6 @@ badges = {
 		}
 	}
 }
-
-let youTube = `<iframe width="560" height="315" src="https://www.youtube.com/embed/QHyp5RdSP9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
 let keys = Object.keys(badges)
 
@@ -210,4 +210,5 @@ p.badgeInfo.addEventListener('click', (e) => {
 		</div>`
 	}
 })
+
 
