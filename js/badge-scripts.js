@@ -50,7 +50,7 @@ badges = {
 	},
 	mexico : {
 		name : 'Mexico',
-		description : 'Learn about Mexico and makes some fun Mexican crafts',
+		description : 'Learn about Mexico and make some fun, colorful Mexican crafts',
 		paper : 'images/badges/mexico-paper-merit-badge.png',
 		fabric : 'images/badges/mexico-fabric-merit-badge.jpeg',
 		certificate : '',
@@ -157,31 +157,31 @@ p.badges.addEventListener('click', (e) => {
 
 		let bi = `
 		<h3>${badges[id].name} Merit Badge</h3>
-        <p>${badges[id].description}</p>
-        <br>
-        Click on the task below to get information and instructions on how to complete it.`
-
-        console.log(Object.keys(badges[id].tasks))
+		<img src="${badges[id].paper}">
+        <div id="des"><p>${badges[id].description}</p></div>
+        <p>Complete all 5 tasks to earn your ${badges[id].name} Merit Badge.<br><br>Click on the tasks below to get information and instructions on how to complete each one.</p>`
 
         Object.keys(badges[id].tasks).forEach((key) => {
         	let task = badges[id].tasks[key]
 
-        	bi += `<div id="${key}" class="badgeTask">
+        	bi += `<div id="${key}"class="badgeTask">
         	${task.title}
         	</div>
         	<div class="hide">${task.instructions}</div>`
 
         })
 
+        let checklist = `<div id="complete"><p>Have you completed all 5 tasks for the ${badges[id].name} Merit Badge?</p>`
+        Object.keys(badges[id].tasks).forEach((key) => {
+        	console.log(badges[id].tasks[key].title)
+			checklist += `<input type="checkbox" id="${badges[id].tasks[key].title}" name="${badges[id].tasks[key].title}">
+           <label for="${badges[id].tasks[key].title}" class="strikethrough">${badges[id].tasks[key].title}</label><br>`
+        })
+
         bi += `
-        Have you completed all 5 tasks for the ${badges[id].name} Merit Badge?
-        Choose from the options below how you want to receive your merit badge:
-		<button id="cert">Get your ${badges[id].name} Merit Badge Certificate</button>
-		<button id="fabric">Get your ${badges[id].name} Fabric Merit Badge Photo</button>
-		<button id="paper">Get your ${badges[id].name} Paper Merit Badge Photo</button><br><br>
-		If you would like to make your own fabric merit badge, download the template below and follow <a href="https://blog.etsy.com/en/how-tuesday-make-a-merit-badge/" target="_blank">these instructions</a>:<br>
-		<button id="template">Get the ${badges[id].name} Merit Badge Template</button>
-        `
+			${checklist}<br>
+			<button id="allDone" class="${id}">Yes, I have completed all 5 tasks!</button>
+		</div>`
 
 		p.badgeInfo.innerHTML = bi
 	}
@@ -193,6 +193,21 @@ p.badges.addEventListener('click', (e) => {
 p.badgeInfo.addEventListener('click', (e) => {
 	if(e.target.classList.contains('badgeTask')){
 		e.target.nextSibling.nextSibling.classList.toggle('hide')
+	}
+
+	if(e.target.id == 'allDone'){
+		let id = e.target.classList[0]
+
+		document.getElementById('complete').innerHTML = `
+		<div id="redeem">
+		<h3>Congratulations!!</h3>
+		<p>Choose how you want to receive your merit badge from the options below</p>
+		<button id="cert">${badges[id].name} Merit Badge Certificate</button>
+		<button id="fabric">${badges[id].name} Fabric-Style Merit Badge</button>
+		<button id="paper">${badges[id].name} Paper-Style Merit Badge</button><br><br>
+		<p>If you would like to make your own fabric merit badge, download the template below and follow <a href="https://blog.etsy.com/en/how-tuesday-make-a-merit-badge/" target="_blank">these instructions</a></p><br>
+		<button id="template">Get the ${badges[id].name} Merit Badge Template</button>
+		</div>`
 	}
 })
 

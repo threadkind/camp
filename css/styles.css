@@ -82,7 +82,7 @@ nav {
 }
 
 #badgeContain {
-	padding: 2%;
+	padding: 5%;
 }
 
 #badges {
@@ -96,6 +96,38 @@ nav {
 	margin: 1%;
 }
 
+#badgeInfo {
+	background: #fff;
+	margin: 5% 0 10% 0;
+	color: #424242;
+}
+
+#badgeInfo h3 {
+	text-align: center;
+	padding: 5%;
+}
+
+#badgeInfo img {
+	max-width: 80%;
+	margin: 0 10%;
+}
+
+#badgeInfo p {
+	width: 90%;
+	margin: 5%;
+}
+
+#des {
+background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+padding: 2.5%;
+color: #fff;
+}
+
+#des p {
+	background: #fff;
+	color: #424242;
+	padding: 1%;
+}
 
 .badgeTask {
 	background: #FFD200;  /* fallback for old browsers */
@@ -104,4 +136,39 @@ nav {
 	box-shadow: 2px 2px 5px grey;
 	padding: 2%;
 	margin: 1%	;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+  text-decoration: line-through;
+}
+
+#complete {
+	border: 1px solid #424242;
+	padding: 2%;
+	width: 90%;
+	margin: 3%;
+	background: rgba(252, 227, 106, 0.5);
+}
+
+#complete h3 {
+	background: #fff;
+}
+
+#complete p {
+	font-size: 1.1em;
+	background: #fff;
+	padding: 2%;
+}
+
+#complete button {
+	width: 100%;
+	font-size: 1.1em;
+	background: rgba(35,152,104,1);
+	color: #fff;
+}
+
+#redeem {
+background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
+padding: 5%;
+margin: 0 0 5% 0;
 }
