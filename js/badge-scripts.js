@@ -10,43 +10,39 @@ badges = {
 		paper : 'images/badges/paper/beatv-paper-merit-badge.png',
 		fabric : 'images/badges/fabric/beatv-fabric-merit-badge.jpeg',
 		certificate : 'https://photos.app.goo.gl/BVo8b7h2yUEtdbF97',
+		template : ``,
 		tasks : {
 			task1 : {
 				id : 'youTube',
 				title : `Subscribe to BeaTV on YouTube`,
-				description : ``,
-				link : ``,
-				instructions : `<p>Check out BeaTV on YouTube. This is where you will find all her Bea TV Summer Camp videos. If you enjoy her Summer Camp content, then take a look around. Bea has over 100 videos for you to enjoy!</p>
+				mainPhoto : ``,
+				instructions : `<p>Check out BeaTV on YouTube.<br>This is where you will find all of the Bea TV Summer Camp videos. If you enjoy Bea's Summer Camp content, then take a look around! Bea has over 100 videos for you to enjoy!</p>
 					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/cTqqiIGwum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>`
 				},
 			task2 : {
 				id : 'facebook',
 				title : `Follow BeaTV on Facebook`,
-				description : `Follow BeaTV on Facebook`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Subscrible to BeaTV on YouTube`
+				mainPhoto : ``,
+				instructions : `Follow BeaTV on Facebook to keep up to date on all of Bea's videos.`
 			},
 			task3 : {
 				id : 'intagram',
 				title : `Follow BeaTV on Instagram`,
-				description : `Follow BeaTV on Instagram`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Follow BeaTV on Instagram`
+				mainPhoto : ``,
+				instructions : ``
 				},
 			task4 : {
 				id : 'twitter',
 				title : `Follow BeaTV on Twitter`,
-				description : `Follow BeaTV on Twitter`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Follow BeaTV on Twitter`
+				mainPhoto : ``,
+				instructions : `Follow BeaTV on Twitter to keep up to date with Bea's latest videos`
 			},
 			task5 : {
 				id : 'camp',
-				title : `Join SummerCamp`,
-				description : `Join SummerCamp`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Join SummerCamp`
+				mainPhoto : ``,
+				title : `Visit Bea-TV.com`,
+				instructions : `Visit Bea-TV.com to see what Bea has been up to!`
 			},
 		}
 	},
@@ -56,6 +52,7 @@ badges = {
 		paper : 'images/badges/paper/mexico-paper-merit-badge.png',
 		fabric : 'images/badges/fabric/mexico-fabric-merit-badge.jpeg',
 		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
+		template : ``,
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -100,6 +97,7 @@ badges = {
 		paper : 'images/badges/paper/storyteller-paper-merit-badge.png',
 		fabric : '',
 		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
+		template : ``,
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -167,7 +165,7 @@ p.badges.addEventListener('click', (e) => {
         	bi += `<div id="${key}"class="badgeTask">
         	${task.title}
         	</div>
-        	<div class="hide">${task.instructions}</div>`
+        	<div class="hide taskInfo">${task.instructions}</div>`
 
         })
 
@@ -202,13 +200,14 @@ p.badgeInfo.addEventListener('click', (e) => {
 		<div id="redeem">
 		<h3>Congratulations!!</h3>
 		<p>Choose how you want to receive your merit badge from the options below</p>
-		<button id="cert">${badges[id].name} Merit Badge Certificate</button>
-		<button id="fabric">${badges[id].name} Fabric-Style Merit Badge</button>
-		<button id="paper">${badges[id].name} Paper-Style Merit Badge</button><br><br>
+		<a href="${badges[id].certificate}" target="_blank"><button id="certificate" class="redeem ${id}">${badges[id].name} Merit Badge Certificate</button></a>
+		<a href="${badges[id].fabric}" target="_blank"><button id="fabric" class="redeem ${id}">${badges[id].name} Fabric-Style Merit Badge</button></a>
+		<a href="${badges[id].paper}" target="_blank"><button id="paper" class="redeem ${id}">${badges[id].name} Paper-Style Merit Badge</button></a><br><br>
 		<p>If you would like to make your own fabric merit badge, download the template below and follow <a href="https://blog.etsy.com/en/how-tuesday-make-a-merit-badge/" target="_blank">these instructions</a></p><br>
-		<button id="template">Get the ${badges[id].name} Merit Badge Template</button>
+		<a href="${badges[id].template}" target="_blank"><button id="template" class="redeem ${id}">Get the ${badges[id].name} Merit Badge Template</button></a>
 		</div>`
 	}
+
 })
 
 

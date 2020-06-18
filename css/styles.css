@@ -117,6 +117,12 @@ nav {
 	margin: 5%;
 }
 
+.taskInfo {
+	padding: 2%;
+	background: rgba(252, 227, 106, 0.5);
+	margin: 2%;
+}
+
 #des {
 background-image: linear-gradient( 109.6deg,  rgba(255,24,134,1) 11.2%, rgba(252,232,68,1) 52%, rgba(53,178,239,1) 100.2% );
 padding: 2.5%;
