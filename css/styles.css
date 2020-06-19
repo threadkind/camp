@@ -146,6 +146,14 @@ color: #fff;
 	font-weight: bold;
 }
 
+.badgeTask h3 {
+	font-size: 1.1em;
+}
+
+.taskImage {
+	width: 100%;
+}
+
 input[type=checkbox]:checked + label.strikethrough{
   text-decoration: line-through;
 }

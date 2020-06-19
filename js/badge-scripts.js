@@ -8,14 +8,16 @@ badges = {
 		name : 'Bea TV',
 		description : 'Check out Bea TV online to earn this badge!',
 		paper : 'images/badges/paper/beatv-paper-merit-badge.png',
-		fabric : 'images/badges/fabric/beatv-fabric-merit-badge.jpeg',
-		certificate : 'https://photos.app.goo.gl/BVo8b7h2yUEtdbF97',
-		template : ``,
+		hrPaper : `images/badges/paper/HighRes/beatv-paper-merit-badge.png`,
+		fabric : 'images/badges/fabric/beatv-fabric-merit-badge.png',
+		hrFabric : `images/badges/fabric/HighRes/beatv-fabric-merit-badge.png`,
+		certificate : 'https://drive.google.com/file/d/1rxwa0SK8VZFUHzYa0xih5fwS05SYuERh/view?usp=sharing',
+		template : `https://drive.google.com/file/d/1pIQyKjAaRTpWx8Y-9MNBIwcwIQh4sGHm/view?usp=sharing`,
 		tasks : {
 			task1 : {
 				id : 'youTube',
 				title : `Subscribe to BeaTV on YouTube`,
-				mainPhoto : ``,
+				mainPhoto : `images/tasks/beatv/youtube.jpg`,
 				instructions : `<p>Check out BeaTV on YouTube.<br>This is where you will find all of the Bea TV Summer Camp videos. If you enjoy Bea's Summer Camp content, then take a look around! Bea has over 100 videos for you to enjoy!</p>
 					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/cTqqiIGwum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>`
@@ -23,24 +25,24 @@ badges = {
 			task2 : {
 				id : 'facebook',
 				title : `Follow BeaTV on Facebook`,
-				mainPhoto : ``,
+				mainPhoto : `https://via.placeholder.com/800`,
 				instructions : `Follow BeaTV on Facebook to keep up to date on all of Bea's videos.`
 			},
 			task3 : {
 				id : 'intagram',
 				title : `Follow BeaTV on Instagram`,
-				mainPhoto : ``,
+				mainPhoto : `https://via.placeholder.com/800`,
 				instructions : ``
 				},
 			task4 : {
 				id : 'twitter',
 				title : `Follow BeaTV on Twitter`,
-				mainPhoto : ``,
+				mainPhoto : `https://via.placeholder.com/800`,
 				instructions : `Follow BeaTV on Twitter to keep up to date with Bea's latest videos`
 			},
 			task5 : {
-				id : 'camp',
-				mainPhoto : ``,
+				id : 'website',
+				mainPhoto : `https://via.placeholder.com/800`,
 				title : `Visit Bea-TV.com`,
 				instructions : `Visit Bea-TV.com to see what Bea has been up to!`
 			},
@@ -50,9 +52,11 @@ badges = {
 		name : 'Mexico',
 		description : 'Learn about Mexico and make some fun, colorful Mexican crafts',
 		paper : 'images/badges/paper/mexico-paper-merit-badge.png',
-		fabric : 'images/badges/fabric/mexico-fabric-merit-badge.jpeg',
-		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
-		template : ``,
+		hrPaper : `images/badges/paper/HighRes/mexico-paper-merit-badge.png`,
+		fabric : 'images/badges/fabric/mexico-fabric-merit-badge.png',
+		hrFabric : `images/badges/fabric/HighRes/mexico-fabric-merit-badge.png`,
+		certificate : 'https://drive.google.com/file/d/1WvoNvJvpFkDRN6jeNBRYLsZNWfPG06Lg/view?usp=sharing',
+		template : `https://drive.google.com/file/d/1ziipAaMa6iMOfL1Oo6D70VmtcUlYP12d/view?usp=sharing`,
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -95,9 +99,11 @@ badges = {
 		name : 'Storyteller',
 		description : 'If you love making stories, then this is a badge you will really enjoy earning!',
 		paper : 'images/badges/paper/storyteller-paper-merit-badge.png',
-		fabric : '',
-		certificate : 'https://photos.app.goo.gl/WC5QmJ43ZRRiKJjp6',
-		template : ``,
+		hrPaper : `images/badges/paper/HighRes/storyteller-paper-merit-badge.png`,
+		fabric : 'images/badges/fabric/storyteller-fabric-merit-badge.png',
+		hrFabric : `images/badges/fabric/HighRes/storyteller-fabric-merit-badge.png`,
+		certificate : 'https://drive.google.com/file/d/1rldHq1dr7Cp3iFxiOOxWSjiPzz0YeQyo/view?usp=sharing',
+		template : `https://drive.google.com/file/d/1MXMAzWXp14jQBm4aUGhwdHbeGUDvZmZ9/view?usp=sharing`,
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
@@ -163,8 +169,10 @@ p.badges.addEventListener('click', (e) => {
         	let task = badges[id].tasks[key]
 
         	bi += `<div id="${key}"class="badgeTask">
-        	${task.title}
+        	<h3>${task.title}</h3>
+        	<img class="taskImage" src="${task.mainPhoto}">
         	</div>
+
         	<div class="hide taskInfo">${task.instructions}</div>`
 
         })
@@ -192,6 +200,9 @@ p.badgeInfo.addEventListener('click', (e) => {
 	if(e.target.classList.contains('badgeTask')){
 		e.target.nextSibling.nextSibling.classList.toggle('hide')
 	}
+	if(e.target.classList.contains('taskImage')){
+		e.target.parentElement.nextSibling.nextSibling.classList.toggle('hide')
+	}
 
 	if(e.target.id == 'allDone'){
 		let id = e.target.classList[0]
@@ -201,8 +212,8 @@ p.badgeInfo.addEventListener('click', (e) => {
 		<h3>Congratulations!!</h3>
 		<p>Choose how you want to receive your merit badge from the options below</p>
 		<a href="${badges[id].certificate}" target="_blank"><button id="certificate" class="redeem ${id}">${badges[id].name} Merit Badge Certificate</button></a>
-		<a href="${badges[id].fabric}" target="_blank"><button id="fabric" class="redeem ${id}">${badges[id].name} Fabric-Style Merit Badge</button></a>
-		<a href="${badges[id].paper}" target="_blank"><button id="paper" class="redeem ${id}">${badges[id].name} Paper-Style Merit Badge</button></a><br><br>
+		<a href="${badges[id].hrFabric}" target="_blank"><button id="fabric" class="redeem ${id}">${badges[id].name} Fabric-Style Merit Badge</button></a>
+		<a href="${badges[id].hrPaper}" target="_blank"><button id="paper" class="redeem ${id}">${badges[id].name} Paper-Style Merit Badge</button></a><br><br>
 		<p>If you would like to make your own fabric merit badge, download the template below and follow <a href="https://blog.etsy.com/en/how-tuesday-make-a-merit-badge/" target="_blank">these instructions</a></p><br>
 		<a href="${badges[id].template}" target="_blank"><button id="template" class="redeem ${id}">Get the ${badges[id].name} Merit Badge Template</button></a>
 		</div>`
