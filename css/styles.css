@@ -78,7 +78,7 @@ nav {
 }
 
 #welcome > img {
-	max-width: 80%;
+	width: 80%;
 	height: auto;
 }
 
@@ -110,7 +110,7 @@ nav {
 }
 
 #badgeInfo img {
-	max-width: 80%;
+	width: 80%;
 	height: auto;
 	margin: 0 10%;
 }
