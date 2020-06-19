@@ -19,32 +19,38 @@ badges = {
 				title : `Subscribe to BeaTV on YouTube`,
 				mainPhoto : `images/tasks/beatv/youtube.jpg`,
 				instructions : `<p>Check out BeaTV on YouTube.<br>This is where you will find all of the Bea TV Summer Camp videos. If you enjoy Bea's Summer Camp content, then take a look around! Bea has over 100 videos for you to enjoy!</p>
+					<a href="https://www.youtube.com/channel/UCpEnS-1sCtqrVwhVhPYWkBg" target="_blank"><button class="beatv-task-buttons">Bea TV on YouTube</button></a>
+					<br><br>
 					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/cTqqiIGwum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>`
 				},
 			task2 : {
 				id : 'facebook',
-				title : `Follow BeaTV on Facebook`,
-				mainPhoto : `https://via.placeholder.com/800`,
-				instructions : `Follow BeaTV on Facebook to keep up to date on all of Bea's videos.`
+				title : `Follow @welcometobeatv on Facebook`,
+				mainPhoto : `images/tasks/beatv/facebook.jpeg`,
+				instructions : `Follow BeaTV on Facebook to keep up to date on all of Bea's videos.<br><br><a href="https://www.facebook.com/welcometobeatv" target="_blank"><button class="beatv-task-buttons">Bea TV on Facebook</button></a>
+					<br><br>`
 			},
 			task3 : {
-				id : 'intagram',
-				title : `Follow BeaTV on Instagram`,
-				mainPhoto : `https://via.placeholder.com/800`,
-				instructions : ``
+				id : 'instagram',
+				title : `Follow @welcometobeatv on Instagram`,
+				mainPhoto : `images/tasks/beatv/instagram.jpeg`,
+				instructions : `Follow BeaTV on Instagram to see some of Bea's art and craft projects!<br><br><a href="https://www.instagram.com/welcometobeatv/" target="_blank"><button class="beatv-task-buttons">Bea TV on Instagram</button></a>
+					<br><br>`
 				},
 			task4 : {
 				id : 'twitter',
-				title : `Follow BeaTV on Twitter`,
-				mainPhoto : `https://via.placeholder.com/800`,
-				instructions : `Follow BeaTV on Twitter to keep up to date with Bea's latest videos`
+				title : `Follow @welcometobeatv on Twitter`,
+				mainPhoto : `images/tasks/beatv/twitter.jpeg`,
+				instructions : `Follow BeaTV on Twitter to keep up to date with Bea's latest videos<br><br><a href="https://twitter.com/welcometobeatv" target="_blank"><button class="beatv-task-buttons">Bea TV on Twitter</button></a>
+					<br><br>`
 			},
 			task5 : {
 				id : 'website',
-				mainPhoto : `https://via.placeholder.com/800`,
 				title : `Visit Bea-TV.com`,
-				instructions : `Visit Bea-TV.com to see what Bea has been up to!`
+				mainPhoto : `images/tasks/beatv/beatv-website.jpeg`,
+				instructions : `Visit Bea-TV.com to see what Bea has been up to!<br><br><a href="https://bea-tv.com/" target="_blank"><button class="beatv-task-buttons">Visit Bea-TV.com</button></a>
+					<br><br>`
 			},
 		}
 	},
@@ -60,37 +66,38 @@ badges = {
 		tasks : {
 			task1 : {
 				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios.`
+				title : `Ojo De Dios - God's Eye`,
+				mainPhoto : `images/tasks/mexico/ojoDeDios.jpg`,
+				instructions : `Watch this video and make an Ojo de Dios or God's Eye with Bea.<br><br>
+					<h3>You Will Need:</h3>
+					Scissors<br>Popsicle Sticks<br>Yarn<br>Glue<br><br>
+					Watch the video below to find out how to make these Ojo De Dios.<br>
+					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/8KRO6Yz_LjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div><br>
+					`
 				},
 			task2 : {
 				id : 'cactusRockArt',
 				title : `Cactus Painted Stone Art`,
-				description : `Here is a description of task 1`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
+				mainPhoto : ``,
 				instructions : `Watch this video and make an Ojo de Dios`
 			},
 			task3 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
+				id : 'donkeyPinata',
+				title : `Mini Donkey Pinatas`,
+				mainPhoto : ``,
 				instructions : `Watch this video and make an Ojo de Dios`
 				},
 			task4 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
+				id : 'sugarSkullDolls',
+				title : `Sugar Skull Dolls`,
+				mainPhoto : ``,
 				instructions : `Watch this video and make an Ojo de Dios`
 			},
 			task5 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
+				id : 'pinchPots',
+				title : `Mexican Pinch Pots`,
+				mainPhoto : ``,
 				instructions : `Watch this video and make an Ojo de Dios`
 			},
 		},
