@@ -68,7 +68,7 @@ nav {
 }
 
 #welcome button {
-	width: 75%;
+	max-width: 75%;
 	padding: 2%;
 	font-size: 1.15em;
 	background: #FFD200;
@@ -78,7 +78,7 @@ nav {
 }
 
 #welcome > img {
-	width: 80%;
+	max-width: 80%;
 	height: auto;
 }
 
@@ -93,7 +93,7 @@ nav {
 }
 
 .badgeImage {
-	width: 40%;
+	max-width: 40%;
 	height: auto;
 	margin: 1%;
 }
@@ -154,7 +154,7 @@ color: #fff;
 }
 
 .taskImage {
-	width: 100%;
+	max-width: 100%;
 }
 
 .beatv-task-buttons {
