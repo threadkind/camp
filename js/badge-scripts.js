@@ -18,39 +18,72 @@ badges = {
 				id : 'youTube',
 				title : `Subscribe to BeaTV on YouTube`,
 				mainPhoto : `images/tasks/beatv/youtube.jpg`,
+				mainPhotoAlt : `bea tv youtube`,
 				instructions : `<p>Check out BeaTV on YouTube.<br>This is where you will find all of the Bea TV Summer Camp videos. If you enjoy Bea's Summer Camp content, then take a look around! Bea has over 100 videos for you to enjoy!</p>
 					<a href="https://www.youtube.com/channel/UCpEnS-1sCtqrVwhVhPYWkBg" target="_blank"><button class="beatv-task-buttons">Bea TV on YouTube</button></a>
-					<br><br>
-					<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/cTqqiIGwum0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>`
+					`,
+				photo : ``,
+				photoAlt : ``,
+				photoCredit : ``,
+				task : ``,
+				ywn : ``,
+				youTube : `cTqqiIGwum0`
 				},
 			task2 : {
 				id : 'facebook',
 				title : `Follow @welcometobeatv on Facebook`,
 				mainPhoto : `images/tasks/beatv/facebook.jpeg`,
+				mainPhotoAlt : `bea tv facebook`,
 				instructions : `Follow BeaTV on Facebook to keep up to date on all of Bea's videos.<br><br><a href="https://www.facebook.com/welcometobeatv" target="_blank"><button class="beatv-task-buttons">Bea TV on Facebook</button></a>
-					<br><br>`
+					<br><br>`,
+				photo : ``,
+				photoAlt : ``,
+				photoCredit : ``,
+				task : ``,
+				ywn : ``,
+				youTube : ``
 			},
 			task3 : {
 				id : 'instagram',
 				title : `Follow @welcometobeatv on Instagram`,
 				mainPhoto : `images/tasks/beatv/instagram.jpeg`,
+				mainPhotoAlt : `bea tv instagram`,
 				instructions : `Follow BeaTV on Instagram to see some of Bea's art and craft projects!<br><br><a href="https://www.instagram.com/welcometobeatv/" target="_blank"><button class="beatv-task-buttons">Bea TV on Instagram</button></a>
-					<br><br>`
+					<br><br>`,
+				photo : ``,
+				photoAlt : ``,
+				photoCredit : ``,
+				task : ``,
+				ywn : ``,
+				youTube : ``
 				},
 			task4 : {
 				id : 'twitter',
 				title : `Follow @welcometobeatv on Twitter`,
 				mainPhoto : `images/tasks/beatv/twitter.jpeg`,
+				mainPhotoAlt : `bea tv twitter`,
 				instructions : `Follow BeaTV on Twitter to keep up to date with Bea's latest videos<br><br><a href="https://twitter.com/welcometobeatv" target="_blank"><button class="beatv-task-buttons">Bea TV on Twitter</button></a>
-					<br><br>`
+					<br><br>`,
+				photo : ``,
+				photoAlt : ``,
+				photoCredit : ``,
+				task : ``,
+				ywn : ``,
+				youTube : ``
 			},
 			task5 : {
 				id : 'website',
 				title : `Visit Bea-TV.com`,
 				mainPhoto : `images/tasks/beatv/beatv-website.jpeg`,
+				mainPhotoAlt : `bea tv dot com`,
 				instructions : `Visit Bea-TV.com to see what Bea has been up to!<br><br><a href="https://bea-tv.com/" target="_blank"><button class="beatv-task-buttons">Visit Bea-TV.com</button></a>
-					<br><br>`
+					<br><br>`,
+				photo : ``,
+				photoAlt : ``,
+				photoCredit : ``,
+				task : ``,
+				ywn : ``,
+				youTube : ``
 			},
 		}
 	},
@@ -160,39 +193,69 @@ badges = {
 		template : `https://drive.google.com/file/d/1MXMAzWXp14jQBm4aUGhwdHbeGUDvZmZ9/view?usp=sharing`,
 		tasks : {
 			task1 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios.`
+					id : '',
+					title : ``,
+					mainPhoto : '',
+					mainPhotoAlt : ``,
+					instructions : ``,
+					photo  : ``,
+					photoAlt : ``,
+					photoCredit : ``,
+					task : ``,
+					ywn : ``,
+					youTube : ``
 				},
 			task2 : {
-				id : 'cactusRockArt',
-				title : `Cactus Painted Stone Art`,
-				description : `Here is a description of task 1`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios`
+					id : '',
+					title : ``,
+					mainPhoto : '',
+					mainPhotoAlt : ``,
+					instructions : ``,
+					photo  : ``,
+					photoAlt : ``,
+					photoCredit : ``,
+					task : ``,
+					ywn : ``,
+					youTube : ``
 			},
 			task3 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios`
+					id : '',
+					title : ``,
+					mainPhoto : '',
+					mainPhotoAlt : ``,
+					instructions : ``,
+					photo  : ``,
+					photoAlt : ``,
+					photoCredit : ``,
+					task : ``,
+					ywn : ``,
+					youTube : ``
 				},
 			task4 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios`
+					id : '',
+					title : ``,
+					mainPhoto : '',
+					mainPhotoAlt : ``,
+					instructions : ``,
+					photo  : ``,
+					photoAlt : ``,
+					photoCredit : ``,
+					task : ``,
+					ywn : ``,
+					youTube : ``
 			},
 			task5 : {
-				id : 'ojoDeDios',
-				title : `God's Eye`,
-				description : `Bea makes God's Eyes`,
-				link : `https://youtu.be/QHyp5RdSP9U`,
-				instructions : `Watch this video and make an Ojo de Dios`
+					id : '',
+					title : ``,
+					mainPhoto : '',
+					mainPhotoAlt : ``,
+					instructions : ``,
+					photo  : ``,
+					photoAlt : ``,
+					photoCredit : ``,
+					task : ``,
+					ywn : ``,
+					youTube : ``
 			}
 		}
 	}
@@ -233,10 +296,17 @@ p.badges.addEventListener('click', (e) => {
 
         	// Task info
         	bi += `<div class="hide taskInfo ${key}">
-        		<p>${task.instructions}</p>
-        		<img src="${task.photo}" alt="${task.photoAlt}">
-        		<span class="credit">${task.photoCredit}</span><br><br>
-        		<strong>${task.task}</strong>`
+        		<p>${task.instructions}</p>`
+
+        	if(task.photo != ``){
+        		bi += `<img src="${task.photo}" alt="${task.photoAlt}">
+        		<span class="credit">${task.photoCredit}</span><br><br>`
+
+        	}
+
+        	if(task.task != ``){
+        		bi += `<strong>${task.task}</strong>`
+        	}
 
         	if(task.ywn != ``){
         		bi += `<div class="ywn">
@@ -246,10 +316,9 @@ p.badges.addEventListener('click', (e) => {
 				task.ywn.forEach((item) => {
 					bi += `<li>${item}</li>`
 				})
+				bi += `</ul>
+        				</div><br>`
         	}
-
-			bi += `</ul>
-        		</div><br>`
 
        		if(task.youTube != ``){
        			bi += `<div class="youTube-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/${task.youTube}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -268,6 +337,7 @@ p.badges.addEventListener('click', (e) => {
 			${checklist}<br>
 			<button id="allDone" class="${id}">Yes, I have completed all 5 tasks!</button>
 		</div>
+		<br>
 	`
 
 		p.badgeInfo.innerHTML = bi
