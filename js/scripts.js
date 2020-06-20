@@ -13,18 +13,14 @@ let menu = {
 		link : 'index.html'
 	},
 	2 : {
-		name : 'Start Here!',
-		link : '#'
-	},
-	3 : {
 		name : 'Merit Badges',
 		link : 'merit-badges.html'
 	},
-	4 : {
+	3 : {
 		name : 'Bea TV Website',
 		link : 'https://bea-tv.com/'
 	},
-	5 : {
+	4 : {
 		name : 'Social',
 		link : '#'
 	}

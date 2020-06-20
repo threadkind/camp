@@ -33,7 +33,7 @@ nav {
 #hamburger {
 	width: 95%;
 	text-align: right;
-	font-size: 2em;
+	font-size: 4em;
 	padding: 2%;
 	color: #fff;
 }
@@ -49,8 +49,13 @@ nav {
 }
 
 #mainNav li a {
-	font-size: 1.5em;
+	padding: 5%;
+	font-size: 2em;
 	color: #fff;
+}
+
+#mainNav li a:hover {
+	background: rgba(256, 256, 256, 0.2);
 }
 
 #welcome {
@@ -149,12 +154,47 @@ color: #fff;
 	font-weight: bold;
 }
 
-.badgeTask h3 {
+.ywn {
+	text-align: center;
+	padding: 1%;
+}
+
+.ywn h3 {
 	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
 }
 
 .taskImage {
 	max-width: 100%;
+}
+
+.credit {
+	display: block;
+	font-size: 0.75em;
+	width: 100%;
+	text-align: center;
+}
+
+#talavera {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#talavera figure {
+	width: 45%;
+}
+
+#talavera img {
+	width: 100%;
+	margin: 0;
+}
+
+#talavera figcaption {
+	font-size: 0.7em;
+	text-align: center;
 }
 
 .beatv-task-buttons {
@@ -163,6 +203,11 @@ color: #fff;
 	font-weight: bold;
 	background: #bea;
 	padding: 2%;
+}
+
+.taskInfo img {
+	width: 45%;
+	margin: 2.5%;
 }
 
 input[type=checkbox]:checked + label.strikethrough{
@@ -213,4 +258,81 @@ margin: 0 0 5% 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#welcome img {
+		width: 50%;
+	}
+
+	#badges img {
+		width: 30%;
+	}
+
+	#badgeInfo {
+		width: 70%;
+		margin: 5% 15% 10% 15%;
+	}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	#hamburger {
+		display: none;
+	}
+
+	.menuHide {
+		display: inline;
+	}
+
+	#mainNav {
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	}
+
+	#mainNav li {
+		width: 20%;
+		text-align: center;
+	}
+
+	#mainNav li a {
+		font-size: 1em;
+	}
+
+	#welcome {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	#welcome h1 {
+		width: 100%;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	#welcome h2 {
+		width: 100%;
+		font-size: 1.1em;
+		text-align: center;
+	}
+
+	#welcome img {
+		width: 25%;
+	}
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
