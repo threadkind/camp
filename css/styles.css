@@ -98,9 +98,13 @@ nav {
 	color: #404040;
 }
 
-#welcome > img {
+#welcome div {
 	width: 50%;
 	height: auto;
+}
+
+#welcome div img {
+	width: 100%;
 }
 
 #badgeContain {
