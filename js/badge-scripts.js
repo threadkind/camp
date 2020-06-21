@@ -119,7 +119,7 @@ badges = {
 				photo : `https://upload.wikimedia.org/wikipedia/commons/c/c9/Notocactuswarasii.jpg`,
 				photoAlt : `cactus`,
 				photoCredit : `Image By <a href="//commons.wikimedia.org/wiki/User:Stickpen" title="User:Stickpen">Stickpen</a> - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=7173604">Link</a>`,
-				task : `Task 2: Watch this video from <a href="https://www.youtube.com/channel/UCmmsfuHGQDbXzXl2WAv5u1A" target="_blank">Maisons du Monde</a> to get inspiration to make some painted cactus rock art. Use lots of colors to make different designs.`,
+				task : `Task 2: Watch this video from <a href="https://www.youtube.com/channel/UCmmsfuHGQDbXzXl2WAv5u1A" target="_blank">Maisons du Monde</a> to get inspiration to make some painted cactus rock art`,
 				ywn : ['Rocks', 'Paints', 'Paintbrushes'],
 				youTube : `dY9G6F_yCMM`
 			},
@@ -267,7 +267,7 @@ let keys = Object.keys(badges)
 let badgeMenu = ``
 
 keys.forEach((key) => {
-	badgeMenu += `<img class="badgeImage" id="${key}" src="${badges[key].paper}">`
+	badgeMenu += `<div><img class="badgeImage" id="${key}" src="${badges[key].paper}" alt="${key} merit badge"></div>`
 })
 p.badges.innerHTML = badgeMenu
 
@@ -342,6 +342,8 @@ p.badges.addEventListener('click', (e) => {
 
 		p.badgeInfo.innerHTML = bi
 	}
+
+		p.badgeInfo.scrollIntoView()
 
 })
 
