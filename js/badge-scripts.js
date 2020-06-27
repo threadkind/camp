@@ -284,7 +284,7 @@ badges = {
 					photoCredit : ``,
 					task : `Task 4: Write a cooperative/partner story with a friend or family member`,
 					ywn : ['A Friend of Family Member', 'A Dice (Optional)', 'A Different Color Pen for Each Participant', 'Paper'],
-					youTube : `Is5CPTqiYso`
+					youTube : `djjeCOOjhJ0`
 			},
 			task5 : {
 					id : 'bookBinding',
